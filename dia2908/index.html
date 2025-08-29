@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- DOM - Document Object Model -->
+
+    <p id="grau" >Grau é arte</p>
+    <button onclick="mudarCor()" >Clique aq pareceiro</button>
+
+    <input onkeyup="digitar()" type="text" id="input" />
+
+    <script>
+
+        function digitar(){
+            var texto = document.getElementById(input).value
+            document.getElementById("grau").innerHTML = input
+        }
+    
+        function mudarCor(){
+            
+            // acessa o meu paragrafo e troca a cor dele pra azul//
+        document.getElementById("grau").style.color = "blue"
+        
+    // acessa o meu paragrafo e altera oq esta escrito dentro do meu paragrafo para essa nova escrita //
+        document.getElementById("grau").innerHTML = "@244_biel46"
+
+    
+        var texto = document.getElementById("grau"). innerHTML
+        alert(texto)
+
+
+        }
+
+    </script>
+
+</body>
+</html>

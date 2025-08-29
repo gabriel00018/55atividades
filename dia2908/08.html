@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- DOM - Document Object Model -->
+
+    <p id="palavra" >asdfghjklç</p>
+    <button onclick="digitar()" id="botao" >Clique aq pareceiro</button>
+
+    <script>
+
+        function digitar(){
+           var tempo = new Date(); 
+            document.getElementById("palavra").innerHTML = tempo.getDate() + "/" +( tempo.getMonth() + 1 ) + "/" + tempo.getFullYear() + "--" + tempo.getHours() + ":" + tempo.getMinutes()
+            
+        }
+
+    </script>
+
+</body>
+</html>
