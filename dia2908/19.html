@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade 19</title>
+</head>
+<body>
+    <p id="texto">Calopsitas são legais</p>
+    <div id="body">
+        <p></p>
+    </div>
+    <button onclick="apertar()" id="botao">Clique aqui</button>
+    <script>
+        var lista = ['red', 'blue', 'green', 'yellow', 'purple', 'black', 'cyan'];
+ 
+        document.getElementById("body").style.backgroundColor = 'purple';
+        document.getElementById("body").style.width = '50px';
+        document.getElementById("body").style.height = '50px';
+    function apertar() {
+        var cor = lista[Math.floor(Math.random() * lista.length)];
+        document.getElementById("body").style.backgroundColor = cor;
+    }
+    </script>
+</body>
+</html>

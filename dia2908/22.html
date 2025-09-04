@@ -9,15 +9,14 @@
     
     <!-- DOM - Document Object Model -->
 
-<div id="otario" >Aperta ai troxa</div>
+    <button onclick="conta()" id="botao" >Clique aq pareceiro</button>
 
-    <button onclick="apareceId()" id="botao" >Clique aq pareceiro</button>
-    
     <script>
 
-        function apareceId(){
-           var texto = document.getElementById("otario").id
-           alert("id: " + texto)
+        var contagem = 0 
+        function conta(){
+           contagem++
+           alert(contagem)
         }
 
     </script>

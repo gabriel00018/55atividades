@@ -8,16 +8,21 @@
 <body>
     
     <!-- DOM - Document Object Model -->
-
-<div id="otario" >Aperta ai troxa</div>
-
-    <button onclick="apareceId()" id="botao" >Clique aq pareceiro</button>
     
+    <button onclick="sumiu()" id="botao" >Clique aq pareceiro</button>
+    
+    <style>
+        
+        .dom{
+            display: flex;
+        }
+
+    </style>
+
     <script>
 
-        function apareceId(){
-           var texto = document.getElementById("otario").id
-           alert("id: " + texto)
+        function sumiu(){
+            document.getElementById("botao").style.display = "none"
         }
 
     </script>

@@ -8,16 +8,17 @@
 <body>
     
     <!-- DOM - Document Object Model -->
+    <p id="dom" >
+        DOM DOM DOM, DOM DOM DOM
+          TAVA AQ NO BAILE ESCUTANDO AQUELE SOOOOOOOMMMM
+    </p>
 
-<div id="otario" >Aperta ai troxa</div>
-
-    <button onclick="apareceId()" id="botao" >Clique aq pareceiro</button>
+    <button onclick="mudarCor()" id="botao" >Clique aq pareceiro</button>
     
     <script>
 
-        function apareceId(){
-           var texto = document.getElementById("otario").id
-           alert("id: " + texto)
+        function mudarCor(){
+            document.getElementById("dom").style.backgroundColor = "yellow"
         }
 
     </script>

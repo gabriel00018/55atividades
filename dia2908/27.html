@@ -9,15 +9,13 @@
     
     <!-- DOM - Document Object Model -->
 
-<div id="otario" >Aperta ai troxa</div>
+    <input id="texto" type="text" oninput="ola()">
 
-    <button onclick="apareceId()" id="botao" >Clique aq pareceiro</button>
-    
     <script>
 
-        function apareceId(){
-           var texto = document.getElementById("otario").id
-           alert("id: " + texto)
+        function ola(){
+           var mostraai = document.getElementById("texto").value
+           console.log(mostraai)
         }
 
     </script>

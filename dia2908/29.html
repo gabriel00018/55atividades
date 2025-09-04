@@ -8,16 +8,21 @@
 <body>
     
     <!-- DOM - Document Object Model -->
-
-<div id="otario" >Aperta ai troxa</div>
-
-    <button onclick="apareceId()" id="botao" >Clique aq pareceiro</button>
     
+    <img class="fotos" id="henrique" onmouseover="foto()" src="img/henriquefoto.jpg" alt="Henrique HACKER">
+
+<style>
+
+    .fotos{
+        width: 500px;
+    }
+
+</style>
+
     <script>
 
-        function apareceId(){
-           var texto = document.getElementById("otario").id
-           alert("id: " + texto)
+        function foto(){
+            document.getElementById("henrique").src = "img/biribinha.jpg"
         }
 
     </script>

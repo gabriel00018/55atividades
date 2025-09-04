@@ -9,15 +9,14 @@
     
     <!-- DOM - Document Object Model -->
 
-<div id="otario" >Aperta ai troxa</div>
-
-    <button onclick="apareceId()" id="botao" >Clique aq pareceiro</button>
+<h1 id="texto"> Henrique é feio </h1>
+   
+<button onclick="trocaCor()" id="botao" >Clique aq pareceiro</button>
     
     <script>
 
-        function apareceId(){
-           var texto = document.getElementById("otario").id
-           alert("id: " + texto)
+        function trocaCor(){
+           document.getElementById("texto").style.color = "blue";
         }
 
     </script>

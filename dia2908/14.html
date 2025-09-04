@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- DOM - Document Object Model -->
+
+<div class="quadradoo" id="quadrado" ></div>
+
+<style>
+
+    .quadradoo{
+        background-color: blue;
+        width: 20px;
+        height: 24px;
+    }
+
+</style>
+   
+<br>
+<br>
+
+<button onclick="trocaCor()" id="botao" >Clique aq pareceiro</button>
+    
+    <script>
+
+        function trocaCor(){
+           document.getElementById("quadrado").style.width = "1000px";
+        }
+
+    </script>
+
+</body>
+</html>

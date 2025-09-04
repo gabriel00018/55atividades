@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- DOM - Document Object Model -->
+
+    <div onmouseover ="mudarCor()" id="quadrado" class="quadradoo">Passa o Mouse aq menó</div>
+    
+    <style>
+
+        .quadradoo{
+            background-color: aqua;
+            width: 90px;
+            height: 90px;
+        }
+
+    </style>
+
+    <script>
+
+        function mudarCor(){
+            document.getElementById("quadrado").style.backgroundColor = "yellow"
+        }
+
+    </script>
+
+</body>
+</html>
